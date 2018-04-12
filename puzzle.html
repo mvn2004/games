@@ -6,24 +6,7 @@
     <title>Личный сайт студента GeekBrains</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script>
-        var correctAnswersCount;
-
-        function askQuestion(textBoxId, answer) {
-            var userAnswer = document.getElementById(textBoxId).value;
-            if (userAnswer.toLowerCase() == answer) {
-                correctAnswersCount++;
-            }
-        }
-
-        function playPuzzle() {
-            correctAnswersCount = 0;
-            askQuestion("userAnswer1", "хрен");
-            askQuestion("userAnswer2", "капуста");
-            alert("Количество правильных ответов: " + correctAnswersCount);
-        }
-
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>

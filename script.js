@@ -1,3 +1,19 @@
+var correctAnswersCount;
+
+function askQuestion(textBoxId, answer) {
+	var userAnswer = document.getElementById(textBoxId).value;
+	if (userAnswer.toLowerCase() == answer) {
+		correctAnswersCount++;
+	}
+}
+
+function playPuzzle() {
+	correctAnswersCount = 0;
+	askQuestion("userAnswer1", "хрен");
+	askQuestion("userAnswer2", "капуста");
+	alert("Количество правильных ответов: " + correctAnswersCount);
+}
+
 function playGuess() {
     "use strict";
     var number = Math.floor(Math.random() * 100);
